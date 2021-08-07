@@ -1,0 +1,38 @@
+import { AlbumEntity } from '../../../album/entities/album.entity';
+import { ProfileEntity } from '../../../profil/entities/profile.entity';
+import { SettingEntity } from '../../../setting/entities/setting.entity';
+import { LogEntity } from '../../../log/entities/log.entity';
+import { CreditEntity } from '../../../credit/entities/credit.entity';
+import { RoomEntity } from '../../../room/entities/room.entity';
+import { RoomPrivateEntity } from '../../../room-private/entities/room-private.entity';
+import { RoomVipEntity } from '../../../room-vip/entities/room-vip.entity';
+import { TimerEntity } from '../../../timer/entities/timer.entity';
+export declare class ModelEntity {
+    id: number;
+    pseudo: string;
+    email: string;
+    firstname: string;
+    lastname: string;
+    day_birth: string;
+    month_birth: string;
+    year_birth: number;
+    date_birth: string;
+    state: string;
+    path_recto: string;
+    path_verso: string;
+    path_soft: string;
+    path_cin: string;
+    status: number;
+    role: string;
+    password: string;
+    salt: string;
+    albums: AlbumEntity;
+    profile: ProfileEntity;
+    setting: SettingEntity;
+    logs: LogEntity;
+    credit: CreditEntity;
+    rooms: RoomEntity;
+    privateRooms: RoomPrivateEntity;
+    vipRooms: RoomVipEntity;
+    timer: TimerEntity;
+}
