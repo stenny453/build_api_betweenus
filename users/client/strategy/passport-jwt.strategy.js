@@ -31,12 +31,13 @@ const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const client_entity_1 = require("../entities/client.entity");
 const user_payload_interface_1 = require("../../interfaces/user-payload.interface");
+const MODEL_SECRET = 'modelBetweenUs';
 let JwtClientStrategy = class JwtClientStrategy extends passport_1.PassportStrategy(passport_jwt_1.Strategy) {
     constructor(userRepository) {
         super({
             jwtFromRequest: passport_jwt_1.ExtractJwt.fromAuthHeaderAsBearerToken(),
             ignoreExpiration: false,
-            secretOrKey: process.env.CLIENT_SECRET,
+            secretOrKey: MODEL_SECRET,
         });
         this.userRepository = userRepository;
     }

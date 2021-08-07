@@ -1,3 +1,4 @@
+
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -17,7 +18,7 @@ const config_1 = require("@nestjs/config");
 const common_1 = require("@nestjs/common");
 const platform_express_1 = require("@nestjs/platform-express");
 const app_service_1 = require("./app.service");
-const path_upload = 'https://betweenus-api.foudia-group.com/uploads/';
+const path_upload = 'http://159.89.232.35/uploads/';
 let AppController = class AppController {
     constructor(appService, configService) {
         this.appService = appService;

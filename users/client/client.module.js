@@ -18,6 +18,7 @@ const client_entity_1 = require("./entities/client.entity");
 const dotenv = require("dotenv");
 const mail_module_1 = require("../../mail/mail.module");
 dotenv.config();
+const MODEL_SECRET = 'modelBetweenUs';
 let ClientModule = class ClientModule {
 };
 ClientModule = __decorate([
@@ -28,7 +29,7 @@ ClientModule = __decorate([
                 defaultStrategy: 'jwt'
             }),
             jwt_1.JwtModule.register({
-                secret: process.env.MODEL_SECRET,
+                secret: MODEL_SECRET,
                 signOptions: { expiresIn: '86400s' },
             }),
             mail_module_1.MailModule
