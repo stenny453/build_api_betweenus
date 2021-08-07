@@ -42,7 +42,7 @@ AppModule = __decorate([
                 cache: true,
             }),
             typeorm_1.TypeOrmModule.forRoot({
-                type: 'mysql',
+		type: 'mysql',
                 host: 'betweenus-do-user-9646930-0.b.db.ondigitalocean.com',
                 port: 25060,
                 username: 'doadmin',
