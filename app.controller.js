@@ -17,9 +17,7 @@ const config_1 = require("@nestjs/config");
 const common_1 = require("@nestjs/common");
 const platform_express_1 = require("@nestjs/platform-express");
 const app_service_1 = require("./app.service");
-
-const path_upload = 'https://betweenus-api.foudia-group.com/uploads/'; // A modifier
-
+const path_upload = 'https://betweenus-api.foudia-group.com/uploads/';
 let AppController = class AppController {
     constructor(appService, configService) {
         this.appService = appService;
