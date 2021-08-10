@@ -193,7 +193,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], AppGateway.prototype, "handleAnsPeerId", null);
 AppGateway = __decorate([
-    websockets_1.WebSocketGateway(),
+    websockets_1.WebSocketGateway(4000, { path: '/socket' }),
     __metadata("design:paramtypes", [room_service_1.RoomService,
         room_private_service_1.RoomPrivateService,
         room_vip_service_1.RoomVipService,

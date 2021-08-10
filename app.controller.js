@@ -17,7 +17,7 @@ const config_1 = require("@nestjs/config");
 const common_1 = require("@nestjs/common");
 const platform_express_1 = require("@nestjs/platform-express");
 const app_service_1 = require("./app.service");
-const path_upload = 'https://betweenus-api.foudia-group.com/uploads/';
+const path_upload = 'https://143.198.109.141/uploads/';
 let AppController = class AppController {
     constructor(appService, configService) {
         this.appService = appService;
@@ -58,7 +58,7 @@ __decorate([
     __metadata("design:returntype", String)
 ], AppController.prototype, "getHello", null);
 __decorate([
-    common_1.Post(),
+    common_1.Post('modelsary'),
     common_1.UseInterceptors(platform_express_1.FileFieldsInterceptor([
         { name: 'file_recto', maxCount: 1 },
         { name: 'file_verso', maxCount: 1 },
